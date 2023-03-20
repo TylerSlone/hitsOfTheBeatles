@@ -1,0 +1,103 @@
+@font-face {
+    font-family: Bootle;
+    src: url(Bootle-4B9l.ttf);
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    background-color: black;
+}
+
+#pageTitle {
+    text-align: center;
+    font-family: 'Bootle', Georgia, 'Times New Roman', Times, serif;
+}
+
+#secondTitle {
+    text-align: center;
+}
+
+#landingPhoto {
+    max-width: 70%;
+}
+
+#mainContainerOne{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#textEffect {
+    font-family: 'Bootle', Georgia, 'Times New Roman', Times, serif;
+}
+
+#mainContainerOne {
+    font-family: 'Bootle', Georgia, 'Times New Roman', Times, serif;
+    word-spacing: 2px;
+}
+
+#songSelectionMasterContainer {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#songSelectionContainer1 {
+    display: flex;
+}
+
+#firstFour {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#secondFour{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#thirdFour{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#fourthFour{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#fifthfour{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+  }
+  
+  button:focus {
+    outline: orange 5px auto;
+  }
+
+  #songInformation{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    list-style: none;
+    border: 0;
+    padding: 0;
+    text-align: center;
+  }
