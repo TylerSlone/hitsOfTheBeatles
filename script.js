@@ -1,4 +1,4 @@
-// Array of Objects containing all the US number 1 hits
+// Array of Objects containing all of The Beatles US number 1 hits
 const songs = [
     {
         artist: "The Beatles",
@@ -155,13 +155,27 @@ const songNameElement = document.getElementById("songName");
 const albumNameElement = document.getElementById("albumName");
 const yearReleasedElement = document.getElementById("yearReleased");
 
-//Event listeners for video changes
+//albumArt section targeting
+
+const albumArtElement = document.getElementById('albumArt');
+
+//Event listeners for video changes & Api Calls
 lovemeDoButton.addEventListener("click", function() {
   landingIframe.src = "https://www.youtube.com/embed/0JWl_wUOQc4";
   artistNameElement.textContent= songs[0].artist;
   songNameElement.textContent = songs[0].song;
   albumNameElement.textContent = songs [0].album;
   yearReleasedElement.textContent = songs[0].year;
+  
+  fetch('https://theaudiodb.com/api/v1/json/2/album.php?m=2117303/')
+  .then(response => response.json())
+  .then(data => {
+    const albumCoverArt = data.album[0].strAlbumThumb;
+    albumArtElement.innerHTML = `<img src="${albumCoverArt}" alt="Album Cover">`;
+  })
+  .catch(error => {
+    console.error(error);
+  });
 });
 
 iFeelFineButton.addEventListener("click", function() {
@@ -170,6 +184,10 @@ iFeelFineButton.addEventListener("click", function() {
   songNameElement.textContent = songs[1].song;
   albumNameElement.textContent = songs [1].album;
   yearReleasedElement.textContent = songs[1].year;
+
+//There was no album art on my chosen API
+albumArtElement.innerHTML = '';
+ 
 });
 
 cantBuyMeLoveButton.addEventListener("click", function() {
@@ -178,6 +196,17 @@ cantBuyMeLoveButton.addEventListener("click", function() {
     songNameElement.textContent = songs[2].song;
     albumNameElement.textContent = songs [2].album;
     yearReleasedElement.textContent = songs[2].year;
+
+
+    fetch('https://theaudiodb.com/api/v1/json/2/album.php?m=2118147/')
+    .then(response => response.json())
+    .then(data => {
+      const albumCoverArt = data.album[0].strAlbumThumb;
+      albumArtElement.innerHTML = `<img src="${albumCoverArt}" alt="Album Cover">`;
+    })
+    .catch(error => {
+      console.error(error);
+    });
 });
 
 eightDaysAWeekButton.addEventListener("click", function() {
@@ -186,6 +215,16 @@ eightDaysAWeekButton.addEventListener("click", function() {
     songNameElement.textContent = songs[3].song;
     albumNameElement.textContent = songs [3].album;
     yearReleasedElement.textContent = songs[3].year;
+
+    fetch('https://theaudiodb.com/api/v1/json/2/album.php?m=2146428/')
+    .then(response => response.json())
+    .then(data => {
+      const albumCoverArt = data.album[0].strAlbumThumb;
+      albumArtElement.innerHTML = `<img src="${albumCoverArt}" alt="Album Cover">`;
+    })
+    .catch(error => {
+      console.error(error);
+    });
 });
 
 iwanttoHoldYourHandButton.addEventListener("click", function() {
@@ -194,6 +233,16 @@ iwanttoHoldYourHandButton.addEventListener("click", function() {
     songNameElement.textContent = songs[4].song;
     albumNameElement.textContent = songs [4].album;
     yearReleasedElement.textContent = songs[4].year;
+
+    fetch('https://theaudiodb.com/api/v1/json/2/album.php?m=2176157/')
+    .then(response => response.json())
+    .then(data => {
+      const albumCoverArt = data.album[0].strAlbumThumb;
+      albumArtElement.innerHTML = `<img src="${albumCoverArt}" alt="Album Cover">`;
+    })
+    .catch(error => {
+      console.error(error);
+    });
 });
 
 sheLovesYouButton.addEventListener("click", function() {
@@ -202,6 +251,16 @@ sheLovesYouButton.addEventListener("click", function() {
     songNameElement.textContent = songs[5].song;
     albumNameElement.textContent = songs [5].album;
     yearReleasedElement.textContent = songs[5].year;
+
+    fetch('https://theaudiodb.com/api/v1/json/2/album.php?m=2330255/')
+    .then(response => response.json())
+    .then(data => {
+      const albumCoverArt = data.album[0].strAlbumThumb;
+      albumArtElement.innerHTML = `<img src="${albumCoverArt}" alt="Album Cover">`;
+    })
+    .catch(error => {
+      console.error(error);
+    });
 });
 
 aHardDaysNightButton.addEventListener("click", function() {
@@ -210,6 +269,16 @@ aHardDaysNightButton.addEventListener("click", function() {
     songNameElement.textContent = songs[6].song;
     albumNameElement.textContent = songs [6].album;
     yearReleasedElement.textContent = songs[6].year;
+
+    fetch('https://theaudiodb.com/api/v1/json/2/album.php?m=2118147/')
+    .then(response => response.json())
+    .then(data => {
+      const albumCoverArt = data.album[0].strAlbumThumb;
+      albumArtElement.innerHTML = `<img src="${albumCoverArt}" alt="Album Cover">`;
+    })
+    .catch(error => {
+      console.error(error);
+    });
 });
 
 weCanWorkItOutButton.addEventListener("click", function() {
@@ -218,6 +287,9 @@ weCanWorkItOutButton.addEventListener("click", function() {
     songNameElement.textContent = songs[7].song;
     albumNameElement.textContent = songs [7].album;
     yearReleasedElement.textContent = songs[7].year;
+
+    albumArtElement.innerHTML = '';
+
 });
 
 yesterdayButton.addEventListener("click", function() {
@@ -226,6 +298,16 @@ yesterdayButton.addEventListener("click", function() {
     songNameElement.textContent = songs[8].song;
     albumNameElement.textContent = songs [8].album;
     yearReleasedElement.textContent = songs[8].year;
+
+    fetch('https://theaudiodb.com/api/v1/json/2/album.php?m=2109681/')
+    .then(response => response.json())
+    .then(data => {
+      const albumCoverArt = data.album[0].strAlbumThumb;
+      albumArtElement.innerHTML = `<img src="${albumCoverArt}" alt="Album Cover">`;
+    })
+    .catch(error => {
+      console.error(error);
+    });
 });
 
 ticketToRideButton.addEventListener("click", function() {
@@ -234,6 +316,17 @@ ticketToRideButton.addEventListener("click", function() {
     songNameElement.textContent = songs[9].song;
     albumNameElement.textContent = songs [9].album;
     yearReleasedElement.textContent = songs[9].year;
+
+    fetch('https://theaudiodb.com/api/v1/json/2/album.php?m=2109681/')
+    .then(response => response.json())
+    .then(data => {
+      const albumCoverArt = data.album[0].strAlbumThumb;
+      albumArtElement.innerHTML = `<img src="${albumCoverArt}" alt="Album Cover">`;
+    })
+    .catch(error => {
+      console.error(error);
+    });
+
 });
 
 helpButton.addEventListener("click", function() {
@@ -242,6 +335,16 @@ helpButton.addEventListener("click", function() {
     songNameElement.textContent = songs[10].song;
     albumNameElement.textContent = songs [10].album;
     yearReleasedElement.textContent = songs[10].year;
+
+    fetch('https://theaudiodb.com/api/v1/json/2/album.php?m=2109681/')
+    .then(response => response.json())
+    .then(data => {
+      const albumCoverArt = data.album[0].strAlbumThumb;
+      albumArtElement.innerHTML = `<img src="${albumCoverArt}" alt="Album Cover">`;
+    })
+    .catch(error => {
+      console.error(error);
+    });
 });
 
 paperBackWriterButton.addEventListener("click", function() {
@@ -250,6 +353,8 @@ paperBackWriterButton.addEventListener("click", function() {
     songNameElement.textContent = songs[11].song;
     albumNameElement.textContent = songs [11].album;
     yearReleasedElement.textContent = songs[11].year;
+
+    albumArtElement.innerHTML = "";
 });
 
 allYouNeedIsLoveButton.addEventListener("click", function() {
@@ -258,6 +363,16 @@ allYouNeedIsLoveButton.addEventListener("click", function() {
     songNameElement.textContent = songs[12].song;
     albumNameElement.textContent = songs [12].album;
     yearReleasedElement.textContent = songs[12].year;
+
+    fetch('https://theaudiodb.com/api/v1/json/2/album.php?m=2118148/')
+    .then(response => response.json())
+    .then(data => {
+      const albumCoverArt = data.album[0].strAlbumThumb;
+      albumArtElement.innerHTML = `<img src="${albumCoverArt}" alt="Album Cover">`;
+    })
+    .catch(error => {
+      console.error(error);
+    });
 });
 
 helloGoobdyeButton.addEventListener("click", function() {
@@ -266,6 +381,16 @@ helloGoobdyeButton.addEventListener("click", function() {
     songNameElement.textContent = songs[13].song;
     albumNameElement.textContent = songs [13].album;
     yearReleasedElement.textContent = songs[13].year;
+
+    fetch('https://theaudiodb.com/api/v1/json/2/album.php?m=2118148/')
+    .then(response => response.json())
+    .then(data => {
+      const albumCoverArt = data.album[0].strAlbumThumb;
+      albumArtElement.innerHTML = `<img src="${albumCoverArt}" alt="Album Cover">`;
+    })
+    .catch(error => {
+      console.error(error);
+    });
 });
 
 pennyLaneButton.addEventListener("click", function() {
@@ -274,6 +399,16 @@ pennyLaneButton.addEventListener("click", function() {
     songNameElement.textContent = songs[14].song;
     albumNameElement.textContent = songs [14].album;
     yearReleasedElement.textContent = songs[14].year;
+
+    fetch('https://theaudiodb.com/api/v1/json/2/album.php?m=2118148/')
+    .then(response => response.json())
+    .then(data => {
+      const albumCoverArt = data.album[0].strAlbumThumb;
+      albumArtElement.innerHTML = `<img src="${albumCoverArt}" alt="Album Cover">`;
+    })
+    .catch(error => {
+      console.error(error);
+    });
 });
 
 heyJudeButton.addEventListener("click", function() {
@@ -282,6 +417,8 @@ heyJudeButton.addEventListener("click", function() {
     songNameElement.textContent = songs[15].song;
     albumNameElement.textContent = songs [15].album;
     yearReleasedElement.textContent = songs[15].year;
+
+    albumArtElement.innerHTML = "";
 });
 
 comeTogetherButton.addEventListener("click", function() {
@@ -290,6 +427,16 @@ comeTogetherButton.addEventListener("click", function() {
     songNameElement.textContent = songs[16].song;
     albumNameElement.textContent = songs [16].album;
     yearReleasedElement.textContent = songs[16].year;
+
+    fetch('https://theaudiodb.com/api/v1/json/2/album.php?m=2109694/')
+    .then(response => response.json())
+    .then(data => {
+      const albumCoverArt = data.album[0].strAlbumThumb;
+      albumArtElement.innerHTML = `<img src="${albumCoverArt}" alt="Album Cover">`;
+    })
+    .catch(error => {
+      console.error(error);
+    });
 });
 
 letItBeButton.addEventListener("click", function() {
@@ -298,6 +445,16 @@ letItBeButton.addEventListener("click", function() {
     songNameElement.textContent = songs[17].song;
     albumNameElement.textContent = songs [17].album;
     yearReleasedElement.textContent = songs[17].year;
+
+    fetch('https://theaudiodb.com/api/v1/json/2/album.php?m=2118149/')
+    .then(response => response.json())
+    .then(data => {
+      const albumCoverArt = data.album[0].strAlbumThumb;
+      albumArtElement.innerHTML = `<img src="${albumCoverArt}" alt="Album Cover">`;
+    })
+    .catch(error => {
+      console.error(error);
+    });
 });
 
 getBackButton.addEventListener("click", function() {
@@ -306,6 +463,16 @@ getBackButton.addEventListener("click", function() {
     songNameElement.textContent = songs[18].song;
     albumNameElement.textContent = songs [18].album;
     yearReleasedElement.textContent = songs[18].year;
+
+    fetch('https://theaudiodb.com/api/v1/json/2/album.php?m=2118149/')
+    .then(response => response.json())
+    .then(data => {
+      const albumCoverArt = data.album[0].strAlbumThumb;
+      albumArtElement.innerHTML = `<img src="${albumCoverArt}" title="Let it Be">`;
+    })
+    .catch(error => {
+      console.error(error);
+    });
 });
 
 theLongandWindingRoadButton.addEventListener("click", function() {
@@ -314,4 +481,14 @@ theLongandWindingRoadButton.addEventListener("click", function() {
     songNameElement.textContent = songs[19].song;
     albumNameElement.textContent = songs [19].album;
     yearReleasedElement.textContent = songs[19].year;
+
+    fetch('https://theaudiodb.com/api/v1/json/2/album.php?m=2118149/')
+    .then(response => response.json())
+    .then(data => {
+      const albumCoverArt = data.album[0].strAlbumThumb;
+      albumArtElement.innerHTML = `<img src="${albumCoverArt}" title="Let it Be">`;
+    })
+    .catch(error => {
+      console.error(error);
+    });
 });
