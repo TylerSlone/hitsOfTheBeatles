@@ -109,12 +109,23 @@ button {
     width: 400px;
     height: 400px;
  }
-  
+
+#chartEncapsulation{
+    display: none;
+    justify-content:center;
+}  
+
+
+#showHideChart{
+    text-align: center;
+    border: 5px;
+    color: teal;
+    border-style: solid, 2px, white;
+}
 
  footer {
     margin-top: 10px;
-   
-    
     text-align: left;
     text-decoration: underline;
  }
+

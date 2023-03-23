@@ -492,3 +492,46 @@ theLongandWindingRoadButton.addEventListener("click", function() {
       console.error(error);
     });
 });
+
+
+
+
+//Chart showing The Beatles album sales
+
+const xValues = ["Sgt. Pepper's Lonley Hearts Club Band", "Abbey Road", "The White Album", "Rubber Soul", "Revolver", "Magical Mystery Tour", "Let it Be"
+, "A Hard Day's Night", "Help!", "Please, Please Me", "Beatles For Sale", "Yellow Submarine", "With The Beatles"];
+const yValues =[32000000, 19893949, 13782269, 8575843, 7174684, 7032199, 5957058 , 5352124, 4403956, 1674069, 1375610, 1250492, 1118954];
+let pieColors =["#afa85a", "#394843", "#ffffff", "#c45d18", "#060606", "#d1cb77", "#bc413c", "#094081", "#d13035", "#fff100", "#f5e7cd", "#f5e7cd", "#e6d234", "#888888"];
+
+new Chart("albumSalesVisulazation", {
+  type: "doughnut",
+  data:  {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: pieColors,
+      data: yValues
+    }]
+  },
+    options: {
+      title : {
+        display: true,
+        text: "The Beatles WorldWide Albums Sales",
+        fontColor: "Teal"
+      }
+    }
+});
+
+//Hide & Show Chart click event
+
+const showHideChartButton = document.getElementById("showHideChartButton");
+const chartContainer = document.getElementById("chartEncapsulation")
+
+
+showHideChartButton.addEventListener("click", function(){
+  if (chartContainer.style.display === "none" || chartContainer.style.display === "") {
+    chartContainer.style.display = "flex";
+  } else {
+    chartContainer.style.display = "none";
+  }
+});
+
