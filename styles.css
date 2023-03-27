@@ -3,6 +3,11 @@
     src: url(Bootle-4B9l.ttf);
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
@@ -18,11 +23,11 @@ body {
     text-align: center;
 }
 
-#landingPhoto {
+#landingIframe {
     max-width: 70%;
 }
 
-#mainContainerOne{
+#mainContainerOne {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -56,28 +61,28 @@ body {
     gap: 10px;
 }
 
-#secondFour{
+#secondFour {
     list-style: none;
     display: flex;
     justify-content: space-between;
     gap: 10px;
 }
 
-#thirdFour{
+#thirdFour {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+#fourthFour {
     list-style: none;
     display: flex;
     justify-content: space-between;
     gap: 10px;
 }
 
-#fourthFour{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-}
-
-#fifthfour{
+#fifthfour {
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -87,45 +92,56 @@ body {
 button {
     all: unset;
     cursor: pointer;
-  }
-  
-  button:focus {
-    outline: orange 5px auto;
-  }
+}
 
-  #songInformation{
+button:focus {
+    outline: teal 5px auto;
+}
+
+#songInformation {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    
     list-style: none;
     border: 0;
     padding: 0;
     text-align: center;
-  }
- 
- 
+    color: teal;
+}
 
+img {
+    width: 25%;
+}
 
- img {
-    width: 400px;
-    height: 400px;
- }
-
-#chartEncapsulation{
+#chartEncapsulation {
     display: none;
-    justify-content:center;
-}  
+    justify-content: center;
+}
 
-
-#showHideChart{
+#showHideChart {
     text-align: center;
     border: 5px;
     color: teal;
     border-style: solid, 2px, white;
 }
 
- footer {
+#desktopOnly{
+    display: none;
+}
+
+footer {
     margin-top: 10px;
     text-align: left;
     text-decoration: underline;
- }
+}
 
+
+@media (min-width: 800px) {
+    #desktopOnly{
+        display: inline;
+        margin: 0%;
+        border: 0%;
+        padding: 0%;
+    }
+    #thirdFour{
+        gap: 10px;
+    }
+}

@@ -171,7 +171,7 @@ lovemeDoButton.addEventListener("click", function() {
   .then(response => response.json())
   .then(data => {
     const albumCoverArt = data.album[0].strAlbumThumb;
-    albumArtElement.innerHTML = `<img src="${albumCoverArt}" alt="Album Cover">`;
+    albumArtElement.innerHTML = `<img src="${albumCoverArt}" Title="Please Please Me album cover">`;
   })
   .catch(error => {
     console.error(error);
@@ -185,7 +185,7 @@ iFeelFineButton.addEventListener("click", function() {
   albumNameElement.textContent = songs [1].album;
   yearReleasedElement.textContent = songs[1].year;
 
-//There was no album art on my chosen API
+//There was no album art for this album on my chosen API
 albumArtElement.innerHTML = '';
  
 });
@@ -202,7 +202,7 @@ cantBuyMeLoveButton.addEventListener("click", function() {
     .then(response => response.json())
     .then(data => {
       const albumCoverArt = data.album[0].strAlbumThumb;
-      albumArtElement.innerHTML = `<img src="${albumCoverArt}" alt="Album Cover">`;
+      albumArtElement.innerHTML = `<img src="${albumCoverArt}" Title="A Hard Day's Night album cover">`;
     })
     .catch(error => {
       console.error(error);
@@ -220,7 +220,7 @@ eightDaysAWeekButton.addEventListener("click", function() {
     .then(response => response.json())
     .then(data => {
       const albumCoverArt = data.album[0].strAlbumThumb;
-      albumArtElement.innerHTML = `<img src="${albumCoverArt}" alt="Album Cover">`;
+      albumArtElement.innerHTML = `<img src="${albumCoverArt}" Title="Beatles For Sale album Cover">`;
     })
     .catch(error => {
       console.error(error);
@@ -238,7 +238,7 @@ iwanttoHoldYourHandButton.addEventListener("click", function() {
     .then(response => response.json())
     .then(data => {
       const albumCoverArt = data.album[0].strAlbumThumb;
-      albumArtElement.innerHTML = `<img src="${albumCoverArt}" alt="Album Cover">`;
+      albumArtElement.innerHTML = `<img src="${albumCoverArt}" Title="Mee the Beatles album cover">`;
     })
     .catch(error => {
       console.error(error);
@@ -256,7 +256,7 @@ sheLovesYouButton.addEventListener("click", function() {
     .then(response => response.json())
     .then(data => {
       const albumCoverArt = data.album[0].strAlbumThumb;
-      albumArtElement.innerHTML = `<img src="${albumCoverArt}" alt="Album Cover">`;
+      albumArtElement.innerHTML = `<img src="${albumCoverArt}" Title="Twist and Shout album cover">`;
     })
     .catch(error => {
       console.error(error);
@@ -274,7 +274,7 @@ aHardDaysNightButton.addEventListener("click", function() {
     .then(response => response.json())
     .then(data => {
       const albumCoverArt = data.album[0].strAlbumThumb;
-      albumArtElement.innerHTML = `<img src="${albumCoverArt}" alt="Album Cover">`;
+      albumArtElement.innerHTML = `<img src="${albumCoverArt}" Title="A Hard day's Night album cover">`;
     })
     .catch(error => {
       console.error(error);
@@ -303,7 +303,7 @@ yesterdayButton.addEventListener("click", function() {
     .then(response => response.json())
     .then(data => {
       const albumCoverArt = data.album[0].strAlbumThumb;
-      albumArtElement.innerHTML = `<img src="${albumCoverArt}" alt="Album Cover">`;
+      albumArtElement.innerHTML = `<img src="${albumCoverArt}" Title="Help! album cover">`;
     })
     .catch(error => {
       console.error(error);
@@ -321,7 +321,7 @@ ticketToRideButton.addEventListener("click", function() {
     .then(response => response.json())
     .then(data => {
       const albumCoverArt = data.album[0].strAlbumThumb;
-      albumArtElement.innerHTML = `<img src="${albumCoverArt}" alt="Album Cover">`;
+      albumArtElement.innerHTML = `<img src="${albumCoverArt}" Title="Help! album cover">`;
     })
     .catch(error => {
       console.error(error);
@@ -340,7 +340,7 @@ helpButton.addEventListener("click", function() {
     .then(response => response.json())
     .then(data => {
       const albumCoverArt = data.album[0].strAlbumThumb;
-      albumArtElement.innerHTML = `<img src="${albumCoverArt}" alt="Album Cover">`;
+      albumArtElement.innerHTML = `<img src="${albumCoverArt}" Title="Help! album cover">`;
     })
     .catch(error => {
       console.error(error);
@@ -368,7 +368,7 @@ allYouNeedIsLoveButton.addEventListener("click", function() {
     .then(response => response.json())
     .then(data => {
       const albumCoverArt = data.album[0].strAlbumThumb;
-      albumArtElement.innerHTML = `<img src="${albumCoverArt}" alt="Album Cover">`;
+      albumArtElement.innerHTML = `<img src="${albumCoverArt}" Title="Magical Mystery Tour album cover">`;
     })
     .catch(error => {
       console.error(error);
@@ -386,7 +386,7 @@ helloGoobdyeButton.addEventListener("click", function() {
     .then(response => response.json())
     .then(data => {
       const albumCoverArt = data.album[0].strAlbumThumb;
-      albumArtElement.innerHTML = `<img src="${albumCoverArt}" alt="Album Cover">`;
+      albumArtElement.innerHTML = `<img src="${albumCoverArt}" Title="Magical Mystery Tour album cover">`;
     })
     .catch(error => {
       console.error(error);
@@ -404,7 +404,7 @@ pennyLaneButton.addEventListener("click", function() {
     .then(response => response.json())
     .then(data => {
       const albumCoverArt = data.album[0].strAlbumThumb;
-      albumArtElement.innerHTML = `<img src="${albumCoverArt}" alt="Album Cover">`;
+      albumArtElement.innerHTML = `<img src="${albumCoverArt}" Title="Magical Mystery Tour album cover">`;
     })
     .catch(error => {
       console.error(error);
@@ -432,7 +432,7 @@ comeTogetherButton.addEventListener("click", function() {
     .then(response => response.json())
     .then(data => {
       const albumCoverArt = data.album[0].strAlbumThumb;
-      albumArtElement.innerHTML = `<img src="${albumCoverArt}" alt="Album Cover">`;
+      albumArtElement.innerHTML = `<img src="${albumCoverArt}" Title="Abbey Road album Cover">`;
     })
     .catch(error => {
       console.error(error);
@@ -450,7 +450,7 @@ letItBeButton.addEventListener("click", function() {
     .then(response => response.json())
     .then(data => {
       const albumCoverArt = data.album[0].strAlbumThumb;
-      albumArtElement.innerHTML = `<img src="${albumCoverArt}" alt="Album Cover">`;
+      albumArtElement.innerHTML = `<img src="${albumCoverArt}" Title="Let it Be album cover">`;
     })
     .catch(error => {
       console.error(error);
@@ -468,7 +468,7 @@ getBackButton.addEventListener("click", function() {
     .then(response => response.json())
     .then(data => {
       const albumCoverArt = data.album[0].strAlbumThumb;
-      albumArtElement.innerHTML = `<img src="${albumCoverArt}" title="Let it Be">`;
+      albumArtElement.innerHTML = `<img src="${albumCoverArt}" Title="Let it Be album cover">`;
     })
     .catch(error => {
       console.error(error);
@@ -486,7 +486,7 @@ theLongandWindingRoadButton.addEventListener("click", function() {
     .then(response => response.json())
     .then(data => {
       const albumCoverArt = data.album[0].strAlbumThumb;
-      albumArtElement.innerHTML = `<img src="${albumCoverArt}" title="Let it Be">`;
+      albumArtElement.innerHTML = `<img src="${albumCoverArt}" Title="Let it Be album cover">`;
     })
     .catch(error => {
       console.error(error);
@@ -500,8 +500,18 @@ theLongandWindingRoadButton.addEventListener("click", function() {
 
 const xValues = ["Sgt. Pepper's Lonley Hearts Club Band", "Abbey Road", "The White Album", "Rubber Soul", "Revolver", "Magical Mystery Tour", "Let it Be"
 , "A Hard Day's Night", "Help!", "Please, Please Me", "Beatles For Sale", "Yellow Submarine", "With The Beatles"];
-const yValues =[32000000, 19893949, 13782269, 8575843, 7174684, 7032199, 5957058 , 5352124, 4403956, 1674069, 1375610, 1250492, 1118954];
-let pieColors =["#afa85a", "#394843", "#ffffff", "#c45d18", "#060606", "#d1cb77", "#bc413c", "#094081", "#d13035", "#fff100", "#f5e7cd", "#f5e7cd", "#e6d234", "#888888"];
+let yValues =[32000000, 19893949, 13782269, 8575843, 7174684, 7032199, 5957058 , 5352124, 4403956, 1674069, 1375610, 1250492, 1118954];
+let pieColors =["#f9ffc9", "#acead4", "#b8d5ff", "#eacbff", "#ffd2ef", "#9d9196", "#37343a", "#ffe9dd", "#e39b99", "#7a504f", "#9ca5ee", "#8e7cc3", "#6fa8dc", "#0b5394"];
+
+/*console.log(Intl.NumberFormat('en-US', { maximumSignificantDigits: 3 }).format(yValues[0]));
+
+function numberFix(yValues){
+  return yValues.toLocaleString('en-US');
+}
+
+console.log(numberFix(yValues));
+
+const formattedYValues = yValues.map(num => num.toLocaleString()); */
 
 new Chart("albumSalesVisulazation", {
   type: "doughnut",
@@ -521,6 +531,10 @@ new Chart("albumSalesVisulazation", {
     }
 });
 
+Chart.defaults.global.defaultFontColor = "White";
+
+
+
 //Hide & Show Chart click event
 
 const showHideChartButton = document.getElementById("showHideChartButton");
@@ -534,4 +548,3 @@ showHideChartButton.addEventListener("click", function(){
     chartContainer.style.display = "none";
   }
 });
-
