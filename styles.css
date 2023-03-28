@@ -48,6 +48,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-width: 100%;
 }
 
 #songSelectionContainer1 {
@@ -133,6 +134,10 @@ footer {
     text-decoration: underline;
 }
 
+#refrences {
+    color: teal;
+}
+
 
 @media (min-width: 800px) {
     #desktopOnly{
@@ -144,4 +149,8 @@ footer {
     #thirdFour{
         gap: 10px;
     }
+
+    #landingIframe {
+    max-width: 70%;
+}
 }

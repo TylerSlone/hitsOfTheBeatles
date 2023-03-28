@@ -526,13 +526,23 @@ new Chart("albumSalesVisulazation", {
       title : {
         display: true,
         text: "The Beatles WorldWide Albums Sales",
-        fontColor: "Teal"
+        fontColor: "Teal",
+        responsive: false,
+        maintainAspectRatio: false
+        // aspectRatio: 1,
+        // resizeDelay: 150
       }
     }
 });
 
 Chart.defaults.global.defaultFontColor = "White";
 
+
+
+/* window.addEventListener("resize", function () {
+  myChart.options.aspectRatio = 0.1;
+  myChart.update();
+}); */
 
 
 //Hide & Show Chart click event
