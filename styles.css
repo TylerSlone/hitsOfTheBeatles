@@ -24,7 +24,9 @@ body {
 }
 
 #landingIframe {
+    min-height: 126px;
     max-width: 70%;
+    border: solid teal;
 }
 
 #mainContainerOne {
@@ -44,60 +46,64 @@ body {
 
 #songSelectionMasterContainer {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     min-width: 100%;
-}
-
-#songSelectionContainer1 {
-    display: flex;
 }
 
 #firstFour {
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    justify-content: center;
+    display: flex;
+    gap: 8px;
+    font-size: 14px;
 }
 
 #secondFour {
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    justify-content: center;
+    gap: 8px;
+    font-size: 14px;
+    color: teal;
 }
 
 #thirdFour {
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    gap: 30px;
+    justify-content: center;
+    gap: 8px;
+    font-size: 14px;
 }
 
 #fourthFour {
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    justify-content: center;
+    gap: 8px;
+    font-size: 14px;
+    color: teal;
 }
 
 #fifthfour {
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    justify-content: center;
+    gap: 8px;
+    font-size: 14px;
 }
 
 button {
     all: unset;
     cursor: pointer;
+    border: 2px outset gray;
+    border-radius: 3px;
 }
 
 button:focus {
     outline: teal 5px auto;
 }
+
+
 
 #songInformation {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -139,6 +145,10 @@ footer {
 }
 
 
+
+/* media queries*/
+
+
 @media (min-width: 800px) {
     #desktopOnly{
         display: inline;
@@ -146,11 +156,68 @@ footer {
         border: 0%;
         padding: 0%;
     }
-    #thirdFour{
-        gap: 10px;
+
+    #songSelectionMasterContainer {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 100%;
+       
     }
 
-    #landingIframe {
-    max-width: 70%;
-}
+    
+
+    #firstFour {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+        color: white;
+        font-size: 16px;
+    }
+    
+    #secondFour {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+        font-size: 16px;
+    }
+
+
+    #thirdFour{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+        font-size: 16px;
+    }
+
+    #fourthFour {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+        font-size: 16px;
+    }
+    
+    #fifthfour {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+        font-size: 16px;
+    }
+
+    button{
+        border: none;
+    }
+    
 }
